@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Menu">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_person_black"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/nav_mail"
+                    android:icon="@drawable/ic_mail_black"
+                    android:title="Mail" />
+                <item
+                    android:id="@+id/nav_add_event"
+                    android:icon="@drawable/icn_add"
+                    android:title="Add event" />
+                <item
+                    android:id="@+id/nav_category"
+                    android:icon="@drawable/ic_pin_drop_black_24dp"
+                    android:title="Category" />
+                <item
+                    android:id="@+id/nav_events_list"
+                    android:icon="@drawable/ic_assignment_black_24dp"
+                    android:title="List of my events" />
+                <item
+                    android:id="@+id/nav_foreign_events_list"
+                    android:icon="@drawable/ic_assignment_black_24dp"
+                    android:title="List of all events" />
+                <item
+                    android:id="@+id/nav_maps"
+                    android:icon="@drawable/ic_my_location_black"
+                    android:title="Map" />
+            </group>
+        </menu>
+    </item>
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/ic_people_black"
+            android:title="Friends" />
+        <item
+            android:id="@+id/nav_people"
+            android:icon="@drawable/ic_people_black"
+            android:title="All people" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_bugs"
+            android:icon="@drawable/ic_bug_report_black"
+            android:title="Bug report" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_ab_done"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_activity"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="List of all activities" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit_to_app_black"
+            android:title="Exit" />
+    </group>
+</menu>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.studio.a4kings.qr_code_app">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+
+    <permission
+        android:name="com.studio.a4kings.qr_code_app.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="com.studio.a4kings.qr_code_app.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+
+    <application
+        android:name=".Application.Application"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.vk.sdk.VKServiceActivity"
+            android:label="ServiceActivity"
+            android:theme="@style/VK.Transparent" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <service android:name=".Services.SignalService" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".Activities.Map"
+            android:label="@string/title_activity_map"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Goolge Maps API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA3Zi632WbLB6RHqaFeP_xUdmm3W4Hk9cU" />
+
+        <activity
+            android:name=".Activities.GreetingWindow"
+            android:launchMode="standard"></activity>
+        <activity
+            android:name=".Activities.DetailTravelEventActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.DetailPlaceActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.FillProfileForm"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.SplashScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.ForeignProfile" />
+        <activity
+            android:name=".Activities.DetailEventActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Activities.FriendsOrSubscribersListActivity" />
+        <activity android:name=".Activities.RequestListActivity" />
+        <activity android:name=".Activities.PeopleList" />
+        <activity android:name=".Activities.EventUsersListActivity" />
+        <activity android:name=".Activities.AddEventActivity" />
+        <activity android:name=".Activities.UpdateEventActivity" />
+        <activity android:name=".Activities.GalleryActivity" />
+        <activity
+            android:name=".Activities.NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

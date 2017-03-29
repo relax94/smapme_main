@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Fragments.SignIn"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:nextFocusForward="@+id/password"
+                    android:nextFocusDown="@+id/password"
+                    android:nextFocusRight="@+id/password"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:id="@+id/email"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_username"
+                    android:inputType="textEmailAddress"
+                    android:drawableStart="@drawable/ic_account_circle"
+                    android:drawablePadding="5dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/ic_account_circle" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textColorHighlight="@color/colorPrimaryDark"
+                    android:id="@+id/password"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:textSize="14sp"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/ic_lock" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:text="Login to my account"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#fff"
+                android:background="#0277bd"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="11sp"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot your password?"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:textSize="11sp"
+                    android:text="Use recovery page"
+                    style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <android.support.design.widget.FloatingActionButton
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/fbSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    app:backgroundTint="#3949ab"
+                    android:src="@drawable/ic_fb" />
+                <android.support.design.widget.FloatingActionButton
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/gplSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="#d32f2f"
+                    android:src="@drawable/ic_gp" />
+                <android.support.design.widget.FloatingActionButton
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/vkSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="#4d7cb1"
+                    android:src="@drawable/ic_vk" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

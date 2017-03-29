@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4a9fe8</color>
+    <color name="colorPrimaryDark">#0d47a1</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="buttonActive">#2cdcd7d7</color>
+    <color name="backgroundTint">#88ffffff</color>
+    <color name="textColor">#fff</color>
+    <color name="material_teal_a400">#5c9920</color>
+    <color name="color_primary_blue">#2196f3</color>
+    <color name="color_primary_blue_dark">#1976d2</color>
+    <color name="color_accent_pink">#ff4081</color>
+    <color name="color_shadow">#44000000</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

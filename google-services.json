@@ -1,0 +1,52 @@
+{
+  "project_info": {
+    "project_id": "qbrapp-1168",
+    "project_number": "1097719620441",
+    "name": "qbrapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097719620441:android:e37802fb4fd52da6",
+        "client_id": "android:com.studio.a4kings.qr_code_app",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.studio.a4kings.qr_code_app",
+          "certificate_hash": ["F350158FCE1D5A8044C1F55509C8FE419ED05401"]
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097719620441-256s9gkfka71i3rqkbtjrpcd7jgse8mf.apps.googleusercontent.com",
+          "client_type": 1
+        },
+        {
+          "client_id": "1097719620441-6dpnb0dnv05hroap11fab11366hi8n55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

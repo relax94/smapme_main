@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="vintage-chroma-1.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/20070c7f7006549d90955d613190bec38b51ccfe/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/20070c7f7006549d90955d613190bec38b51ccfe/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pavelsikun/vintage-chroma/1.5/79e75ad5eb125a3444c7ee609f72e4229bc53012/vintage-chroma-1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
