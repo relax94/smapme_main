@@ -32,7 +32,6 @@
                     android:drawableStart="@drawable/ic_account_circle"
                     android:drawablePadding="5dp"
                     android:maxLines="1"
-                    android:singleLine="true"
                     android:drawableLeft="@drawable/ic_account_circle" />
             </android.support.design.widget.TextInputLayout>
 
